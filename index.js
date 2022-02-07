@@ -1,2 +1,2 @@
-const exportTest = 'Hello World'
-export default exportTest
+const mwcTest = 'Hello World'
+export default mwcTest

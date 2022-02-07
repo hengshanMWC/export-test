@@ -1,10 +1,10 @@
 {
-  "name": "@mwc/export-test",
+  "name": "mwc-test",
   "version": "0.0.1",
   "description": "min npm",
-  "main": "/dist/exportTest.cjs.min.js",
-  "model": "/dist/exportTest.esm.min.js",
-  "unpkg": "/dist/exportTest.min.js",
+  "main": "/dist/mwcTest.cjs.min.js",
+  "model": "/dist/mwcTest.esm.min.js",
+  "unpkg": "/dist/mwcTest.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:npm": "rollup --config"
