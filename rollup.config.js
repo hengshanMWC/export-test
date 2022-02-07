@@ -2,7 +2,6 @@ import validateNpmPackageName from 'validate-npm-package-name'
 import camelcase from 'camelcase'
 import json from '@rollup/plugin-json';
 import { terser } from 'rollup-plugin-terser'
-import svelte from 'rollup-plugin-svelte'
 import pkg from './package.json'
 let moduleName = pkg.name
 // 检查是否是合法的 npm 包名
@@ -19,7 +18,6 @@ if (/^@.+\//g.test(moduleName)) {
 moduleName = camelcase(moduleName)
 const plugins = [
   json(),
-  svelte(),
   terser({
     compress: {
       pure_getters: true,
@@ -32,7 +30,7 @@ const plugins = [
   
 export default [
   {
-    input: 'src/index.ts',
+    input: 'index.js',
     output: {
       file: `dist/${moduleName}.es.min.js`,
       format: 'es'
@@ -40,11 +38,20 @@ export default [
     plugins
   },
   {
-    input: 'src/index.ts',
+    input: 'index.js',
     output: {
       file: `dist/${moduleName}.cjs.min.js`,
       format: 'cjs'
     },
     plugins
-  }
+  },
+  {
+    input: 'index.js',
+    output: {
+      file: `dist/${moduleName}.min.js`,
+      format: 'iife',
+      name: moduleName
+    },
+    plugins
+  },
 ]
