@@ -1,10 +1,10 @@
 {
-  "name": "mwc-test",
+  "name": "mmt",
   "version": "0.0.1",
   "description": "min npm",
-  "main": "/dist/mwcTest.cjs.min.js",
-  "model": "/dist/mwcTest.esm.min.js",
-  "unpkg": "/dist/mwcTest.min.js",
+  "main": "/dist/mmt.cjs.min.js",
+  "model": "/dist/mmt.esm.min.js",
+  "unpkg": "/dist/mmt.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:npm": "rollup --config"

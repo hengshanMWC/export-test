@@ -1,2 +1,2 @@
-const mwcTest = 'Hello World'
-export default mwcTest
+const mmt = 'Hello World'
+export default mmt
