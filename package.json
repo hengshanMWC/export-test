@@ -1,5 +1,5 @@
 {
-  "name": "export-test",
+  "name": "@mwc/export-test",
   "version": "0.0.1",
   "description": "min npm",
   "main": "/dist/exportTest.cjs.min.js",
