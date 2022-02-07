@@ -1,2 +1,2 @@
-const ExportTest = 1
+const ExportTest = 'Hello World'
 export default ExportTest
